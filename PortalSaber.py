@@ -444,8 +444,7 @@ Sair
 def login():
     if request.method == "POST":
 
-        usuario_digitado = request.form["git pull
-"]
+        usuario_digitado = request.form["acesso"]
         senha = request.form["senha"]
 
         conn = conectar()
