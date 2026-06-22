@@ -2489,6 +2489,7 @@ def painel_admin():
                     <th>Nome</th>
                     <th>Usuário</th>
                     <th>Tipo</th>
+                    <th>Ano / Turma</th>
                 </tr>
 
     """
@@ -2501,6 +2502,7 @@ def painel_admin():
             <td>{u['usuario'] if 'usuario' in u.keys() else '-'}</td>
             <td>{u['usuario']}</td>
             <td>{u['tipo']}</td>
+            <td>{u['turma'] if u['turma'] else '-'}</td>
         </tr>
         """
 
