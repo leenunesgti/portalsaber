@@ -2414,7 +2414,7 @@ def painel_admin():
     c.execute("""
     SELECT *
     FROM usuarios
-    ORDER BY nome
+    ORDER BY id DESC
     """)
     lista_usuarios = c.fetchall()
 
@@ -2498,7 +2498,7 @@ def painel_admin():
         html += f"""
         <tr>
             <td>{u['id']}</td>
-            <td>{u['nome']}</td>
+            <td>{u['usuario'] if 'usuario' in u.keys() else '-'}</td>
             <td>{u['usuario']}</td>
             <td>{u['tipo']}</td>
         </tr>
